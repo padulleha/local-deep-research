@@ -63,10 +63,10 @@ Key settings in `config/settings.toml`:
 [llm]
 model = "llama3.2"          # Ollama model to use
 base_url = "http://localhost:11434"
-temperature = 0.7
+temperature = 0.5           # Lowered from 0.7 for more factual, consistent outputs
 
 [search]
-backend = "searxng"         # Options: searxng, duckduckgo, tavily
+backend = "duckduckgo"      # Using duckduckgo as default (no local instance needed)
 searxng_url = "http://localhost:8080"
 max_results = 10
 
@@ -91,21 +91,5 @@ local-deep-research/
 │       └── utils/               # Shared utilities
 ├── config/
 │   └── settings.example.toml
-├── tests/
-├── docs/
-└── reports/                     # Generated research reports
+├── tests
 ```
-
-## Contributing
-
-Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) and check the [issue tracker](https://github.com/your-username/local-deep-research/issues) for open tasks.
-
-For first-time contributors, see our [PR template](.github/PULL_REQUEST_TEMPLATE/first_time_contributor.md).
-
-## License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-Forked from [LearningCircuit/local-deep-research](https://github.com/LearningCircuit/local-deep-research). Thanks to all original contributors.
