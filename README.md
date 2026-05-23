@@ -71,7 +71,7 @@ searxng_url = "http://localhost:8080"
 max_results = 10
 
 [research]
-max_iterations = 3          # How many refinement cycles to perform
+max_iterations = 5          # Increased from 3 — more refinement cycles for thorough results
 max_sources = 20            # Maximum sources to consult
 output_dir = "./reports"    # Where to save research reports
 ```
@@ -88,8 +88,5 @@ local-deep-research/
 │       ├── llm/                 # LLM interface modules
 │       ├── search/              # Search backend adapters
 │       ├── synthesis/           # Report generation
-│       └── utils/               # Shared utilities
-├── config/
-│   └── settings.example.toml
-├── tests
+│       └── utils/ 
 ```
